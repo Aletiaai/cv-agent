@@ -1,0 +1,78 @@
+**Objective:**  
+* Analyze the user’s initial resume and generate a list of **specific, actionable questions** for each section to gather missing details, clarify ambiguities, or improve content quality.  
+* Use the responses to these questions to later build an **ideal resume version** tailored to the user’s career goals.  
+* The user's first name is: {first_name}
+
+**Instructions:**  
+
+1. **Analyze the Initial Resume:**  
+   - Review the user’s resume sections to identify gaps, ambiguities, or areas where additional details would strengthen the content.  
+   - For each section, determine:  
+     - Missing information (e.g., quantifiable metrics, specific skills, certifications).  
+     - Ambiguous phrasing (e.g., vague achievements, unclear job responsibilities).  
+     - Opportunities to align content with industry standards (e.g., using action verbs, structuring bullet points).  
+
+2. **Generate Questions Per Section:**  
+   - Craft **3-5 questions per section** that ask for the exact information needed to improve the resume.  
+   - Prioritize questions that address:  
+     - Missing quantifiable results (e.g., "Can you specify the percentage increase in sales you achieved?").  
+     - Unclear or generic statements (e.g., "What specific tools did you use to ‘optimize workflows’?").  
+     - Skills, certifications, or achievements not mentioned but relevant to the user’s target role.  
+
+   **Sections & Example Questions:**  
+   - **{Summary}:**  
+     - "Your summary mentions ‘experienced professional’—can you specify your exact job title and years of experience?"  
+     - "What 2-3 key achievements would you highlight to align with your career goals?"  
+     - "Are there any industry-specific skills or certifications missing from your summary?"  
+
+   - **{Skills}:**  
+     - "Your resume lists ‘project management’—can you specify tools you’ve used (e.g., Asana, Trello)?"  
+     - "Are there any technical skills (e.g., Python, SQL) relevant to your target role that are missing?"  
+     - "Can you categorize your skills into hard and soft skills for clarity?"  
+
+   - **{Work_Experience}:**  
+     - "For your role at [Company], can you provide a specific example of a project you led and its outcome?"  
+     - "You mentioned ‘improved efficiency’—can you quantify this (e.g., reduced processing time by 20%)?"  
+     - "What action verbs (e.g., *spearheaded*, *optimized*, *designed*) best describe your contributions?"  
+
+   - **{Education}:**  
+     - "Did you receive any academic honors or scholarships that could be added?"  
+     - "Are there certifications (e.g., PMP, Google Analytics) relevant to your target role?"  
+     - "Is your graduation date included? If not, please specify."  
+
+   - **{Languages}:**  
+     - "Can you clarify your proficiency level for [Language] (e.g., fluent, conversational, basic)?"  
+     - "Are there additional languages you speak that are relevant to your target industry?"  
+
+3. **Output Format:**  
+   - Return the results in Spanish using the following JSON structure. Include:  
+     - A personalized email intro.  
+     - Questions for each section, with **brief explanations** of why the information is needed.  
+     - A closing message encouraging the user to respond.  
+
+{{  
+  "email_asking questions_intro": "Hola {first_name}, revisé tu currículum y tengo algunas preguntas para asegurarme de crear una versión ideal. Por favor responde lo siguiente:",  
+  "asking_complementary_info": {{  
+    "summary": {{  
+      "questions": ["Pregunta 1", "Pregunta 2", "Pregunta 3"],  
+      "notes": "Necesito esta información para crear un resumen más específico y alineado con tus objetivos profesionales."  
+    }},  
+    "skills": {{  
+      "questions": ["Pregunta 1", "Pregunta 2", "Pregunta 3"],  
+      "notes": "Estas preguntas ayudarán a destacar las habilidades más relevantes para el puesto que buscas."  
+    }},  
+    "work_experience": {{  
+      "questions": ["Pregunta 1", "Pregunta 2", "Pregunta 3"],  
+      "notes": "Con estos detalles, podré redactar logros cuantificables y usar verbos de acción más impactantes."  
+    }},  
+    "education": {{  
+      "questions": ["Pregunta 1", "Pregunta 2", "Pregunta 3"],  
+      "notes": "Esta información añadirá credibilidad y mostrará logros académicos relevantes."  
+    }},  
+    "languages": {{  
+      "questions": ["Pregunta 1", "Pregunta 2", "Pregunta 3"],  
+      "notes": "Clarificar tu nivel de idiomas ayudará a adaptar el currículum a roles internacionales o bilingües."  
+    }}  
+  }},  
+  "email_asking_questions_closing": "¡Gracias por tus respuestas! Con esta información, crearé una versión mejorada de tu currículum."  
+}}

@@ -1,0 +1,162 @@
+**Objective:**  
+* Generate a polished, professional resume in Spanish using:  
+  - The user’s initial resume.  
+  - Information gathered from the user’s answers to previous questions.  
+* Follow the **exact structure and formatting guidelines** below to ensure consistency and readiness for a Google Docs file.  
+
+**Instructions:**  
+
+1. **Extract Key Information:**  
+   - Use details from the user’s initial resume and their answers to fill in the template.  
+   - Prioritize **quantifiable achievements**, **action verbs**, and **industry-specific keywords**.  
+
+2. **Follow the Template Strictly:**  
+   - Use the structure below. **Do not deviate from headings, bullet styles, or section order.**  
+   - Replace placeholders (e.g., `[Ciudad, País]`) with the user’s information. If data is missing, retain the placeholder.  
+
+**Information**  
+initial summary: **{initial_summary}** and additional information from the user: **{summary_responses}**
+initial skills: **{initial_skills}** and dditional information from the user: **{skills_responses}**
+initial work experience: **{initial_work_experience}** and dditional information from the user: **{work_experience_responses}**
+initial education: **{initial_education}** and dditional information from the user: **{education_responses}**
+initial languages: **{initial_languages}** and dditional information from the user: **{languages_responses}**
+
+```  
+### **[Nombre y apellido del Candidato]**  
+[Ciudad, País] | [Número de Teléfono] | [Dirección de Correo Electrónico] | [Enlace a LinkedIn]  
+
+---  
+
+### **Resumen Profesional**  
+[3-4 líneas destacando experiencia relevante, habilidades clave y logros cuantificables. Ejemplo: "Ingeniero de software con 5 años de experiencia liderando equipos en entornos ágiles. Especializado en desarrollo full-stack con Python y React, aumenté la eficiencia de despliegues en un 30% mediante automatización."]  
+
+---  
+
+### **Habilidades Técnicas**  
+- **Lenguajes de Programación:** [Python, JavaScript, SQL]  
+- **Plataformas en la Nube:** [AWS, Google Cloud]  
+- **Herramientas:** [Git, Docker, Jenkins]  
+- **Técnicas Especializadas:** [Machine Learning, DevOps, Scrum]  
+
+### **Habilidades Blandas**  
+- [Liderazgo de equipos multidisciplinarios]  
+- [Comunicación efectiva con stakeholders]  
+- [Resolución creativa de problemas]  
+
+---  
+
+### **Experiencia Laboral**  
+
+**[Puesto] | [Empresa] | [Modalidad: Presencial/Remoto/Híbrido]**  
+**[Mes/Año] - [Mes/Año]**  
+- Incrementé las ventas en un 15% mediante la implementación de una estrategia de marketing digital.  
+- Reduje los tiempos de entrega en un 25% optimizando procesos internos con herramientas de automatización.  
+- Lideré un equipo de 5 desarrolladores para lanzar una aplicación móvil con 50,000 descargas en el primer trimestre.  
+
+**[Puesto] | [Empresa] | [Modalidad]**  
+**[Mes/Año] - [Mes/Año]**  
+- [Agrega logros similares, con métricas y verbos de acción]  
+
+---  
+
+### **Formación Académica**  
+**[Licenciatura en Ingeniería Informática] | [Universidad de XYZ] | [Junio 2020]**  
+- Graduado con honores (top 10% de la clase).  
+- Tesis: "Optimización de algoritmos de machine learning para diagnósticos médicos."  
+
+---  
+
+### **Certificaciones**  
+- [AWS Certified Solutions Architect] | [Amazon Web Services] | [2023]  
+- [Scrum Master Certificado] | [Scrum Alliance] | [2022]  
+
+---  
+
+### **Idiomas**  
+- Inglés (Fluido)  
+- Francés (Intermedio)  
+
+---  
+
+### **Proyectos Relevantes**  
+- **Desarrollo de plataforma de e-learning:** Diseñé y lancé una plataforma con 10,000 usuarios activos en 6 meses.  
+- **Automatización de reportes financieros:** Reduje el tiempo de generación de informes de 8 horas a 45 minutos.  
+```  
+
+3. **Formatting Rules for Google Docs:**  
+   - **Headings:** Use bold and larger fonts for section titles (e.g., **Resumen Profesional**).  
+   - **Bullet Points:** Use hyphen (-) for lists.  
+   - **Consistency:** Ensure dates, job titles, and company names follow the same style.  
+   - **White Space:** Add clear separators (e.g., `---`) between sections.  
+
+4. **Final Output:**  
+   - Return the resume **in Spanish** as plain text (no markdown).  
+   - Include all sections, even if some placeholders remain empty (e.g., LinkedIn link).  
+
+---  
+
+### **Example Output**  
+```  
+### María López  
+Madrid, España | +34 600 123 456 | maria.lopez@email.com | linkedin.com/in/marialopez  
+
+---  
+
+### Resumen Profesional  
+Ingeniera de software con 5 años de experiencia en desarrollo backend y gestión de proyectos ágiles. Especializada en Python y AWS, optimicé el rendimiento de APIs en un 40% y lideré equipos remotos para entregar proyectos con un 95% de satisfacción del cliente.  
+
+---  
+
+### Habilidades Técnicas  
+- **Lenguajes de Programación:** Python, Java, SQL  
+- **Plataformas en la Nube:** AWS, Azure  
+- **Herramientas:** Git, Docker, Jenkins  
+- **Técnicas Especializadas:** Microservicios, CI/CD  
+
+### Habilidades Blandas  
+- Colaboración en equipos remotos  
+- Gestión de tiempos y prioridades  
+- Adaptabilidad a entornos dinámicos  
+
+---  
+
+### Experiencia Laboral  
+
+**Ingeniera de Software Senior | TechSolutions | Remoto             Enero 2021 - Presente**  
+- Reduje la latencia de la API en un 35% mediante la optimización de bases de datos.  
+- Lideré la migración exitosa de 10 microservicios a AWS, ahorrando $15k anuales en costos.  
+- Capacité a 8 nuevos desarrolladores en prácticas ágiles y herramientas DevOps.  
+
+**Desarrolladora Backend | Innovatech | Híbrido                     Junio 2018 - Diciembre 2020**  
+- Automatizé reportes mensuales, reduciendo el tiempo de generación de 6 horas a 45 minutos.  
+- Implementé un sistema de autenticación que redujo las brechas de seguridad en un 90%.  
+
+---  
+
+### Formación Académica  
+Máster en Ingeniería de Software | Universidad Politécnica de Madrid | 2018  
+- Premio al mejor proyecto fin de máster: "Sistema de recomendación basado en machine learning."  
+
+---  
+
+### Certificaciones  
+- AWS Certified Developer | Amazon Web Services | 2022  
+- Scrum Master Professional | Scrum.org | 2021  
+
+---  
+
+### Idiomas  
+- Inglés (Fluido)  
+- Alemán (Básico)  
+
+---  
+
+### Proyectos Relevantes  
+- **Sistema de gestión de tareas:** Desarrollo de una herramienta interna adoptada por 200 empleados, mejorando la productividad en un 20%.  
+```  
+
+---  
+
+### **Notes for Implementation:**  
+- Replace placeholders with the user’s data. If information is missing, retain the placeholder (e.g., `[Enlace a LinkedIn]`).  
+- Ensure the resume is **ready to copy-paste into Google Docs** without markdown.  

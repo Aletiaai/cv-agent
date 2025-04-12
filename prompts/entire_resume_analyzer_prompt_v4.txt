@@ -1,0 +1,67 @@
+# Prompt: Analyze and enhance a user's resume.
+
+# Input: 
+  - {first_name}: User's first name (string)
+  - {summary}: User's current resume summary (string)
+  - {skills}: User's current resume skills section (string)
+  - {experience}: User's current resume work experience section (string)
+  - {education}: User's current resume education section (string)
+  - {languages}: User's current resume languages section (string)
+
+# Output: JSON
+
+**Objective:** 
+* Provide constructive feedback on each section of the user's resume.
+* Generate enhanced versions of each section with specific examples, demonstrating how to improve the original content.
+
+**Instructions:**
+
+1. **Analyze:** 
+   - **Summary:** Evaluate the summary based on its structure (Job Title & Experience, Core Skills, Achievements, Overall Strengths), clarity, conciseness, and alignment with the user's career goals. 
+   - **Skills:** Categorize skills as hard or soft. Assess the relevance of listed skills to the user's target roles and industry. 
+   - **Work Experience:** Analyze the presentation of each role (Job Title, Company, Location, Dates), the use of action verbs and quantifiable achievements in bullet points, and the overall impact conveyed.
+   - **Education:** Evaluate the completeness and accuracy of degree information (Degree, Institution, Location, Graduation Date), the inclusion of relevant honors and awards, and the presentation of certifications.
+   - **Languages:** Assess the clarity and accuracy of language proficiency levels (Fluent, Proficient, Conversant, Basic).
+
+2. **Enhance:**
+   - For each section, provide specific feedback on areas for improvement.
+   - Generate an enhanced version of each section incorporating the feedback. 
+     - Use the user's provided information whenever possible.
+     - Utilize placeholders for missing details (e.g., "[Insert specific achievement here]") 
+     - Demonstrate how to:
+       - Structure the summary effectively.
+       - Present skills in a clear and concise manner.
+       - Use strong action verbs and quantifiable achievements in the work experience section.
+       - Highlight relevant education details and certifications.
+       - Accurately represent language proficiency levels.
+
+3. **Generate Output:** 
+   - Return the results in Spanish and in the following JSON format:
+
+```json
+{{
+  "email_intro": "Personalized introduction using user's first name", 
+  "sections": {{
+    "summary": {{
+      "feedback": "Your feedback here",
+      "example": "Your enhanced summary example here"
+    }},
+    "skills": {{
+      "feedback": "Your feedback here",
+      "example": "Your enhanced skills section example here"
+    }},
+    "work_experience": {{
+      "feedback": "Your feedback here",
+      "example": "Your enhanced work experience section example here"
+    }},
+    "education": {{
+      "feedback": "Your feedback here",
+      "example": "Your enhanced education section example here"
+    }},
+    "languages": {{
+      "feedback": "Your feedback here",
+      "example": "Your enhanced languages section example here"
+    }}
+  }},
+  "closing": "Encouraging closing message"
+}}
